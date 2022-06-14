@@ -1,5 +1,4 @@
 import com.absoft.unit5.beans.Employee;
-import com.absoft.unit5.beans.EmployeeBuilder;
 import com.absoft.unit5.beans.POSITION;
 
 public class Runner {
@@ -18,7 +17,7 @@ public class Runner {
 //        employee2.setPosition(POSITION.JUNIOR);
 
 
-        var employee3 = new EmployeeBuilder()
+        var employee3 = new Employee.Builder()
                 .firstName("Ivan")
                 .lastName("Ivanov")
                 .age(20)

@@ -92,4 +92,48 @@ public class Employee {
 //    public void setPosition(POSITION position) {
 //        this.position = position;
 //    }
+
+    public static class Builder {
+        private String firstName;
+        private String lastName;
+        private int age;
+        private String team;
+        private long salary;
+        private POSITION position;
+
+        public Builder firstName(String firstName){
+            this.firstName=firstName;
+            return this;
+        }
+
+        public Builder lastName(String lastName){
+            this.lastName=lastName;
+            return this;
+        }
+
+        public Builder age(int age){
+            this.age =age;
+            return this;
+        }
+
+        public Builder team(String team){
+            this.team =team;
+            return this;
+        }
+
+        public Builder salary(long salary){
+            this.salary =salary;
+            return this;
+        }
+
+        public Builder position(POSITION position){
+            this.position =position;
+            return this;
+        }
+
+
+        public Employee build(){
+            return new Employee(firstName,lastName,age,team,salary,position);
+        }
+    }
 }
