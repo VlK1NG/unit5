@@ -1,4 +1,4 @@
-package com.absoft.unit5;
+package com.absoft.unit5.beans;
 
 public class Employee {
     public String firstName;
@@ -7,6 +7,10 @@ public class Employee {
     public String team;
     public long salary;
     public POSITION position;
+
+    public Employee(){
+
+    }
 
     public Employee(String firstName, String lastName, int age, String team, POSITION position) {
         this(firstName, lastName, age, team, 0, position);
