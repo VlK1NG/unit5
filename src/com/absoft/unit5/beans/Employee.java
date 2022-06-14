@@ -1,14 +1,14 @@
 package com.absoft.unit5.beans;
 
 public class Employee {
-    public String firstName;
-    public String lastName;
-    public int age;
-    public String team;
-    public long salary;
-    public POSITION position;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String team;
+    private long salary;
+    private POSITION position;
 
-    public Employee(){
+    public Employee() {
 
     }
 
@@ -23,7 +23,9 @@ public class Employee {
         this.age = age;
         this.team = team;
 
-        if (salary == 0) {salary=position.minSalary;} //валидация должна быть в конструкторе или принтер-классе?
+        if (salary == 0) {
+            salary = position.minSalary;
+        } //валидация должна быть в конструкторе или принтер-классе?
 //            switch (position) {
 //                case JUNIOR:
 //                    salary = 5000;
@@ -40,6 +42,54 @@ public class Employee {
 //        }
 
         this.salary = salary;
+        this.position = position;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
+
+    public long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
+
+    public POSITION getPosition() {
+        return position;
+    }
+
+    public void setPosition(POSITION position) {
         this.position = position;
     }
 }
