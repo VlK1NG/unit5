@@ -8,9 +8,9 @@ public class Employee {
     private long salary;
     private POSITION position;
 
-    public Employee() {
-
-    }
+//    public Employee() {
+//
+//    }
 
     public Employee(String firstName, String lastName, int age, String team, POSITION position) {
         this(firstName, lastName, age, team, 0, position);
@@ -45,9 +45,9 @@ public class Employee {
         this.position = position;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+//    public void setFirstName(String firstName) {
+//        this.firstName = firstName;
+//    }
 
     public String getFirstName() {
         return firstName;
@@ -57,39 +57,39 @@ public class Employee {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+//   public void setLastName(String lastName) {
+//       this.lastName = lastName;
+//   }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 
     public String getTeam() {
         return team;
     }
 
-    public void setTeam(String team) {
-        this.team = team;
-    }
+//    public void setTeam(String team) {
+//        this.team = team;
+//    }
 
     public long getSalary() {
         return salary;
     }
 
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
+//    public void setSalary(long salary) {
+//        this.salary = salary;
+//    }
 
     public POSITION getPosition() {
         return position;
     }
 
-    public void setPosition(POSITION position) {
-        this.position = position;
-    }
+//    public void setPosition(POSITION position) {
+//        this.position = position;
+//    }
 }
